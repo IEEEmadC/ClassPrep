@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aerial.classprep.add_subject">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSub"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:background="#98336699"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:titleTextColor="@android:color/white">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="385dp"
+            android:layout_height="672dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:weightSum="1"
+            android:background="@drawable/image2"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-6dp">
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="90dp"
+                android:layout_height="55dp"
+                android:layout_weight="0.04"
+                android:background="@drawable/medium_spacer" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="790dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:orientation="vertical"
+                android:showDividers="middle"
+                android:weightSum="1"
+                android:background="@drawable/border"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="-6dp">
+
+                <EditText
+                    android:id="@+id/nameText"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/toolbarSub"
+                    android:layout_marginTop="23dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Name"/>
+
+                <EditText
+                    android:id="@+id/codeText"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/editText4"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Code" />
+
+                <EditText
+                    android:id="@+id/stDateText"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/editText7"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="textPersonName"
+                    android:hint="Start Date"
+                    android:clickable="true"
+                    android:onClick="setStartDate"/>
+
+                <EditText
+                    android:id="@+id/endDateText"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/editText"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="End Date"
+                    android:focusable="false"
+                    android:onClick="setEndDate"/>
+
+                <EditText
+                    android:id="@+id/nfwText"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/spinner"
+                    android:layout_marginTop="24dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="No of weeks" />
+
+                <EditText
+                    android:id="@+id/timeText"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/editText"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Alarm time"
+                    android:focusable="false"
+                    android:onClick="setAlarmTime"/>
+
+                <Spinner
+                    android:id="@+id/dayText"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:layout_alignEnd="@+id/editText3"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/editText3"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="3dp"
+                    android:entries="@array/items" />
+
+                <EditText
+                    android:id="@+id/lessonText"
+                    android:layout_width="260dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:overScrollMode="always"
+                    android:maxLines="10"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:hint="Type lessons here"/>
+
+                <Button
+                    android:id="@+id/btnt3"
+                    android:layout_width="260dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0.04"
+                    android:background="@drawable/dashedhorizontalline"
+                    android:layout_marginTop="12dp"
+                    android:paddingBottom="20dp" />
+
+                <LinearLayout
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:divider="@drawable/horizontal_spacer"
+                    android:showDividers="middle">
+
+                    <Button
+                        android:id="@+id/btnsave"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp"
+                        android:layout_weight="0.04"
+                        android:text="Save"
+                        android:onClick="addSubject"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/rectangle"/>
+
+                </LinearLayout>
+                </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <![CDATA[
+
+    android:entries="@array/items"/>
+
+
+
+
+]]>
+</android.support.constraint.ConstraintLayout>
