@@ -10,7 +10,7 @@ Hence this app is very much useful mainly for the students who need to be notifi
 To build our application we have used Android Studio as our integrated development environment, Android SDK as software development kit and JAVA as the programming language. 
 
 Video :
-![Watch the video](https://www.youtube.com/watch?v=xgXZOf1dr8g)
+[![IMAGE ALT TEXT HERE](https://github.com/IEEEmadC/Apps-2017/blob/32834f6e60f4753c34abd56a4882bdb56aff10b6/video.png)](https://www.youtube.com/watch?v=xgXZOf1dr8g)
 
 
 For more info contact 
