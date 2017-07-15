@@ -9,9 +9,9 @@ Preparation is a very important thing in our life. As students it is essential t
 Hence this app is very much useful mainly for the students who need to be notified about their lessons before they attend to the class. They can simply add their lessons plan for each class and they will be notified about next class lesson beforehand. 
 To build our application we have used Android Studio as our integrated development environment, Android SDK as software development kit and JAVA as the programming language. 
 
-Video 
-![alt tag](https://www.youtube.com/watch?v=xgXZOf1dr8g)
-;
+Video :
+![Watch the video](https://www.youtube.com/watch?v=xgXZOf1dr8g)
+
 
 For more info contact 
 ktl.desilva@gmail.com,
